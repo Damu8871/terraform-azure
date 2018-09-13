@@ -9,7 +9,7 @@
 
 	provider "aws" {
 
-		region = "<region>"
+	  region = "<region>"
 	}
 
 	data "aws_ami" "search" {
@@ -54,7 +54,7 @@
 	
 	output "ami_id"{
 
-		value = "${data.aws_ami.search.image_id}"
+	  value = "${data.aws_ami.search.image_id}"
 	}
 
 Use the above terraform script to get the AMI Id based on the search results.
@@ -64,9 +64,10 @@ Use the above terraform script to get the AMI Id based on the search results.
 
 	resource "aws_instance" "main" {
 
-	  ami           = "${data.aws_ami.search.image_id}"
+	  ami  = "${data.aws_ami.search.image_id}"
 
 	  instance_type = "t2.micro"
+
 	  tags {
 	    Name = "launch-instance"
 	  }
