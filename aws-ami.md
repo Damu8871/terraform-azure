@@ -76,7 +76,7 @@ Use the above terraform script to get the AMI Id based on the search results.
 	  }
 	}
 
-Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
+Reference: [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
 
 
 
