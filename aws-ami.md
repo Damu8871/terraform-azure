@@ -7,21 +7,19 @@
 ### (i)Create a terraform main.tf file with the following resource:
 
 
-provider "aws" {
-	region = "<region>"
-}
+	provider "aws" {
 
-data "aws_ami" "search" {
+		region = "<region>"
+	}
 
-  most_recent = true
+	data "aws_ami" "search" {
 
-  filter {
-    name   = "name"
-    values = ["<filter value>"]
-  }
-
-
-}
+	  most_recent = true
+	  filter {
+	    name   = "name"
+	    values = ["<filter value>"]
+	  }
+	}
 
 
 ### (1) The resource "aws_ami" :
