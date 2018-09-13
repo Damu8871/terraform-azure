@@ -15,6 +15,7 @@
 	data "aws_ami" "search" {
 
 	  most_recent = true
+
 	  filter {
 	    name   = "name"
 	    values = ["<filter value>"]
@@ -29,6 +30,7 @@
 	(b) To get the recent AMI of RHEL7, use the filter given below,
 		
 		data "aws_ami" "search" {
+
 		  most_recent = true
 
 		  filter {
@@ -41,6 +43,7 @@
 	(c) To get the recent AMI of Windows 2016, use the filter below,
 
 		data "aws_ami" "search" {
+		
 		  most_recent = true
 
 		  filter {
@@ -60,7 +63,7 @@
 Use the above terraform script to get the AMI Id based on the search results.
 
 
-### (iii) We can directly pass the AMI Id to launch an Instance : Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
+### (iii) We can directly pass the AMI Id to launch an Instance : 
 
 	resource "aws_instance" "main" {
 
@@ -72,6 +75,8 @@ Use the above terraform script to get the AMI Id based on the search results.
 	    Name = "launch-instance"
 	  }
 	}
+
+	Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
 
 
 
