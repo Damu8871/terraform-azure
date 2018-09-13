@@ -60,7 +60,7 @@
 Use the above terraform script to get the AMI Id based on the search results.
 
 
-### (iii) We can directly pass the AMI Id to launch an Instance :
+### (iii) We can directly pass the AMI Id to launch an Instance : Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
 
 	resource "aws_instance" "main" {
 
@@ -72,6 +72,8 @@ Use the above terraform script to get the AMI Id based on the search results.
 	    Name = "launch-instance"
 	  }
 	}
+
+
 
 
 
