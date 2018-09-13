@@ -43,7 +43,7 @@
 	(c) To get the recent AMI of Windows 2016, use the filter below,
 
 		data "aws_ami" "search" {
-		
+
 		  most_recent = true
 
 		  filter {
@@ -76,7 +76,7 @@ Use the above terraform script to get the AMI Id based on the search results.
 	  }
 	}
 
-	Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
+Ref [aws_instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
 
 
 
